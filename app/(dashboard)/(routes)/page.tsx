@@ -1,11 +1,13 @@
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import { UserButton } from "@clerk/nextjs";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <UserButton
-    afterSignOutUrl="/"
-    />
+    <div>
+      <UserButton
+      afterSignOutUrl="/"
+      />
+    </div>
   );
 }
